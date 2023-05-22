@@ -76,6 +76,48 @@ XGBoost se basa en el concepto de Gradient Boosting, que es una técnica de ensa
 
 XGBoost es conocido por su excelente rendimiento en términos de precisión y velocidad. Dado que el S&P500 es un índice ampliamente seguido y se negocia activamente en los mercados financieros, la capacidad de predecir los retornos con alta precisión y en tiempo real es fundamental para los inversores y operadores.
 
-De este modelo podemos observar la siguiente grafica que muestra las predicciones de volatilidad con el modelo XGBOOST
+De este modelo podemos observar la siguiente grafica que muestra las predicciones del XGBOOST para los datos de entrenamiento entrenamiento
 
 ![prediccion_de_volatilidad](https://github.com/juanguzman2/Trading-algoritmico/blob/master/Imagenes/pronostico_movil.png?raw=true)
+
+Luego observamos la prediccion con los datos reales:
+
+![prediccion_de_volatilidad](https://github.com/juanguzman2/Trading-algoritmico/blob/master/Imagenes/volatilidad_XGBOOST.png?raw=true)
+
+# Evaluacion de los modelos
+
+La evaluacion se hara con 2 metricas:
+
+* Root Mean Squared Error (RMSE):
+
+El RMSE es una métrica comúnmente utilizada para medir la precisión de un modelo de regresión. Se calcula tomando la raíz cuadrada del error cuadrático medio, que a su vez se obtiene promediando los errores cuadrados entre los valores predichos y los valores reales.
+
+El RMSE se expresa en las mismas unidades que la variable objetivo y proporciona una medida de la diferencia promedio entre los valores predichos y los valores reales. Un RMSE más bajo indica una mayor precisión del modelo, ya que implica que los valores predichos se ajustan mejor a los valores reales.
+
+* Mean Absolute Percentage Error (MAPE):
+
+El MAPE es una métrica utilizada para evaluar la precisión de un modelo en términos de porcentaje de error absoluto promedio en relación con los valores reales. Se calcula tomando el promedio de los errores absolutos porcentuales entre los valores predichos y los valores reales, y multiplicándolo por 100 para obtener un porcentaje.
+
+El MAPE proporciona una medida relativa del error promedio en términos porcentuales, lo que permite comparar la precisión entre diferentes modelos y conjuntos de datos. Un MAPE más bajo indica una mayor precisión del modelo, ya que implica que los valores predichos tienen un menor porcentaje de diferencia con respecto a los valores reales.
+
+Los resultados son:
+
+El RMSE del modelo GARCH en los datos de la serie completa es: 0.1898
+
+El MAPE del modelo GARCH en los datos de la serie completa es: 15.1482%
+
+El RMSE del modelo GARCH en los datos predichos es: 0.1195
+
+El MAPE del modelo GARCH en los datos predichos es: 10.9324%
+
+El RMSE del modelo XGBOOST en los datos de la serie completa es: 0.0338
+
+El MAPE del modelo XGBOOST en los datos de la serie completa es: 2.2842%
+
+El RMSE del modelo XGBOOST en los datos predichos es: 0.0467
+
+El MAPE del modelo XGBOOST en los datos pedichos es: 3.5515%
+
+# Conslusion
+
+La investigación ha evidenciado que el modelo GARCH tiene la capacidad de predecir de manera efectiva la variabilidad mensual de las acciones. No obstante, otros métodos más modernos, como el XGBOOST, pueden arrojar resultados superiores, como se ha observado previamente en las métricas de evaluación. Este proyecto demuestra la utilidad del Machine Learning y GARCH en la estimación futura de la volatilidad de las acciones.
