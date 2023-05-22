@@ -54,7 +54,7 @@ Como el p-valor es menor que $\alpha$, se rechaza $H_0$ para las pruebas de ADF 
 
 Otra forma de verificar la estacionariedad en los modelos es mediante las gráficas ACF y PACF. Si los rezagos de la serie convergen rápidamente al intervalo, podemos decir que la serie es estacionaria. Sin embargo, es importante mencionar que la convergencia rápida de los rezagos en las gráficas ACF y PACF no es suficiente para afirmar la estacionariedad, y que se deben realizar pruebas estadísticas adicionales para confirmarla.
 
-![grafica_acf_pacf](https://github.com/juanguzman2/Trading-algoritmico/blob/master/Imagenes/retornos_acumulados.png?raw=true)
+![grafica_acf_pacf](https://github.com/juanguzman2/Trading-algoritmico/blob/master/Imagenes/acf_pacf.png?raw=true)
 
 En conclusion se puede decir que los retornos del S&P500 son estacionarios
 
@@ -78,7 +78,9 @@ XGBoost es conocido por su excelente rendimiento en términos de precisión y ve
 
 De este modelo podemos observar la siguiente grafica que muestra las predicciones del XGBOOST para los datos de entrenamiento entrenamiento
 
-![prediccion_de_volatilidad](https://github.com/juanguzman2/Trading-algoritmico/blob/master/Imagenes/pronostico_movil.png?raw=true)
+![prediccion_de_volatilidad](https://github.com/juanguzman2/Trading-algoritmico/blob/master/Imagenes/XGBOOST_vs_GARCH%20_train.png?raw=true)
+
+Esto nos muestra que tan bien se ajusto el modelo para los datos de entrenamiento
 
 Luego observamos la prediccion con los datos reales:
 
