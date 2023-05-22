@@ -120,6 +120,18 @@ El RMSE del modelo XGBOOST en los datos predichos es: 0.0467
 
 El MAPE del modelo XGBOOST en los datos pedichos es: 3.5515%
 
-# Conslusion
+# Conclusion
 
 La investigación ha evidenciado que el modelo GARCH tiene la capacidad de predecir de manera efectiva la variabilidad mensual de las acciones. No obstante, otros métodos más modernos, como el XGBOOST, pueden arrojar resultados superiores, como se ha observado previamente en las métricas de evaluación. Este proyecto demuestra la utilidad del Machine Learning y GARCH en la estimación futura de la volatilidad de las acciones.
+
+## Autor
+
+Juan Esteban Guzman Saldarriaga
+
+### Contacto
+
+linkedin : www.linkedin.com/in/juan-guzmans
+
+Celular: 3023060210
+
+Correo : sojuanesi4@gmail.com
